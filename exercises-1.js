@@ -12,7 +12,9 @@
 
 function forEach(array, callback){
     // YOUR CODE HERE
-
+for (var i = 0; i < array.length; i++){
+  callback(array[i], i, array);
+}
 }
 
 // testing your code with console.assert
@@ -56,7 +58,7 @@ console.assert( average(2, 4, 6, 8) === 5 )
 // 3. find the largest number of the inputs (returns the largest input (A NUMBER))
 
 function largest(){
-    // parse arguments into an array
+
     var array = [].slice.call(arguments);
     var largest = 0;
     for (var i = 0; i < array.length; i++) {
@@ -65,11 +67,6 @@ function largest(){
      }
    }
    return largest;
-
-
-
-    // .. do something with each element of args
-    // YOUR CODE HERE
 }
 
 console.assert( largest(2, 4, 6, 8) === 8tu )
@@ -77,7 +74,6 @@ console.assert( largest(2, 4, 6, 8) === 8tu )
 // 4. find the longest string of the inputs (returns the longest input (A STRING))
 
 function longest(){
-    // parse arguments into an array
     var args = [].slice.call(arguments);
     var bodyString = "";
     for(var i = 0; i < args.length; i++){
@@ -119,6 +115,10 @@ function longest(){
 // .split()
 
 // .join()
+function join(){
+  var arg =
+
+}
 
 // .pop()
 
